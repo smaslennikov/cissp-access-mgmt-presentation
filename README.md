@@ -4,12 +4,12 @@
 
 1. Ensure the dependencies are installed:
     * on ubuntu:
-```bash
-sudo apt-get install ruby-dev
-gem uninstall redcarpet
-gem install redcarpet -v 3.1.2
-gem install mdpress
-```
+    ```bash
+    sudo apt-get install ruby-dev
+    gem uninstall redcarpet
+    gem install redcarpet -v 3.1.2
+    gem install mdpress
+    ```
     * on OS X: `gem install mdpress` may suffice
     * ensure you can run `mdpress -h`
 2. Pull down the git repo: `git pull git@github.com:smaslennikov/cissp-access-mgmt-presentation.git`
