@@ -3,8 +3,8 @@
 for i in *.md; do
     if [ ! "$i" == README.md ]; then
         DIR=$(echo $i | cut -d'.' -f 1)
-        if [ ! -d "$DIR" ]; then
-            mdpress $i && echo "<p>$i <a href=$DIR/index.html /> </p>" >> index.html && echo Built $i
+        if [[ ! $(grep $i index.html) ]]; then
+            mdpress $i && echo "<p><a href=$DIR/index.html>$i</a></p>" >> index.html && echo Built $i
         fi
         if [ $OPEN_US ]; then xdg-open $DIR/index.html & fi
     fi
