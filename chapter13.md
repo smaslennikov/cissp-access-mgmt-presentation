@@ -15,8 +15,9 @@ title: Chapter 13 Managing Identity and Authentication
 - devices
 - facilities
 - personnel
+[](drawing 1)
 
-[](Chapter about controlling access to assets, e.g. above. Draw diagram on board to expand on later?)
+[](Chapter about controlling access to assets, e.g. above.)
 
 [](Information: organization's data)
 [](Systems: org's IT systems that provide services)
@@ -27,11 +28,10 @@ title: Chapter 13 Managing Identity and Authentication
 
 ---
 # Access control
+[](# Access is the transfer of information from an object to a subject, which makes it important to understand the definition of both subject and object.)
 
 ## Subjects vs Objects
-
-[](# Access is the transfer of information from an object to a subject, which makes it important to understand the definition of both subject and object.)
-[](Draw a diagram next to above: subject -> object, subject above access)
+[](drawing 2)
 
 [](Subject: active entity to access an object)
 [](Object: passive entity that provides information to subject)
@@ -53,6 +53,7 @@ title: Chapter 13 Managing Identity and Authentication
 - Corrective
     - Recovery
 - Compensation
+[](?drawing 3)
 
 [](Prevent unwanted activity from occuring: don't allow and deter/discourage)
 [](Fences, presence of cameras)
@@ -71,6 +72,7 @@ title: Chapter 13 Managing Identity and Authentication
 - Administrative
 - Logical/Technical
 - Physical
+[](?drawing 3)
 
 [](admin: Policies, procedures, background checks)
 [](logical/tech: hardware/software mechanisms: passwords, biometric scanners, IDS/IPS)
@@ -84,6 +86,7 @@ title: Chapter 13 Managing Identity and Authentication
 - Confidentiality
 - Integrity
 - Availability
+[](?drawing 4)
 
 [](CIA Triad:)
 [](Confidentiality: unauthorized access means loss of it)
@@ -96,6 +99,7 @@ title: Chapter 13 Managing Identity and Authentication
 [](# A core principle with authentication is that all subjects must have unique identities.)
 
 - Unique
+[](drawing 3)
 
 ---
 ## Authentication
@@ -103,6 +107,7 @@ title: Chapter 13 Managing Identity and Authentication
 [](# Identification and authentication always occur together as a single two-step process. Providing an identity is the first step, and providing the authentication information is the second step.)
 
 - Verifies identity
+[](drawing 4)
 
 [](Identification & Authentication is a single two-step process)
 [](Systems maintain secrecy of authentication data)
@@ -114,6 +119,7 @@ title: Chapter 13 Managing Identity and Authentication
 [](# Identification and authentication are “all-or-nothing” aspects of access control. Either a user’s credentials prove a professed identity, or they don’t. In contrast, authorization occupies a wide range of variations.)
 
 - Grants access to a proven identity
+[](drawing 5)
 
 ---
 ## Accountability
@@ -121,6 +127,7 @@ title: Chapter 13 Managing Identity and Authentication
 
 - Logging
 - Audit trail
+[](drawing 6)
 
 [](Must log activity to be able to hold identities liable)
 [](Must have identification and authentication but not authorization)
@@ -256,31 +263,51 @@ title: Chapter 13 Managing Identity and Authentication
 [](# These devices aren’t necessarily able to join a domain, but it is possible to implement device identification and authentication methods for these devices.)
 [](# Organizations typically use third-party tools, such as the SecureAuth Identity Provider - IdP - for device authentication.)
 
-- Allow BYOD devices, but not on the domain
 - Device fingerprinting
     - IdP - SecureAuth Identity Provider for device authentication
 
+[](Allow BYOD devices, but not on the domain)
 [](Device fingerprinting: associate with user accounts, capture characteristics: operating system, version, web browser, etc)
 
 ---
+# Identity Management
+[](# Identity management techniques generally fall into one of two categories: centralized and decentralized/distributed. Centralized access)
 
-[]( )
+- Centralized
+- Decentralized/distributed
+
+[](Centralized: all authorization performed by a single entity)
+[](Decentralized: various entities perform authorization verification)
+[](Book basically says Centralized is better due to less administrative overhead in managing systems)
+
 ---
-# Identity management techniques generally fall into one of two categories: centralized and decentralized/distributed. Centralized access
+# Single Sign On (SSO)
 
-[]( )
+- Centralized
+- Increases security
+
+[](Allows user to authenticate once to access many resources)
+[](Increases security as users have to remember less passwords, want to write them down)
+
 ---
-# The following sections discuss several common SSO mechanisms.
+## Lightweight Directory Access Protocol: LDAP
 
-[]( )
+- An SSO mechanism
+- Uses Domains and Trusts
+
+[](You can think of LDAP as a phone book for network services and assets. Authentication should be required)
+[](Has multiple domains - collections of subjects and objects - with trusts established between them)
+
 ---
-# A Public Key Infrastructure (PKI) uses LDAP when integrating digital certificates into transmissions.
+## Ticket authentication
 
-[]( )
----
-# Kerberos 5, relies on symmetric-key cryptography (also known as secret-key cryptography) using the Advanced Encryption Standard (AES) symmetric encryption protocol.
+[](# Kerberos 5, relies on symmetric-key cryptography - also known as secret-key cryptography - using the Advanced Encryption Standard - AES - symmetric encryption protocol.)
 
-[]( )
+- Kerberos
+
+[](SSO Mechanism that uses a third-party entity to provide authentication)
+[](KRB is most common and well known)
+
 ---
 # Security Assertion Markup Language   Security Assertion Markup Language (SAML) is an XML-based language that is commonly used to exchange authentication and authorization (AA) information between federated organizations.
 
