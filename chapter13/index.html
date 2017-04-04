@@ -28,19 +28,283 @@
     <div id="impress">
     <div class='step' >
     
-<h1>Managing Identity and Authentication</h1>
+<h1>Chapter 13</h1>
 
-<p>Sounds like here we should discuss things</p>
+<h2>Managing Identity and Authentication</h2>
 </div>
       <div class='step' >
     
-<h1>Here we can have a second slide</h1>
+<h1>Assets</h1>
+
+<ul>
+<li>information</li>
+<li>systems</li>
+<li>devices</li>
+<li>facilities</li>
+<li>personnel</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>Access control</h1>
+
+<h2>Subjects vs Objects</h2>
+</div>
+      <div class='step' >
+    
+<h2>Access control types</h2>
+
+<ul>
+<li><p>Preventive</p>
+
+<ul>
+<li>Deterrent</li>
+<li>Directive</li>
+</ul></li>
+<li><p>Detective</p></li>
+<li><p>Corrective</p>
+
+<ul>
+<li>Recovery</li>
+</ul></li>
+<li><p>Compensation</p></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Access control implementations</h2>
+
+<ul>
+<li>Administrative</li>
+<li>Logical/Technical</li>
+<li>Physical</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>IT Loss Types &amp; CIA Triad</h2>
+
+<ul>
+<li>Confidentiality</li>
+<li>Integrity</li>
+<li>Availability</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Identity</h2>
+
+<ul>
+<li>Subject identity must be unique</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Authentication</h2>
+
+<ul>
+<li>Authentication verifies identity</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Authorization</h2>
+
+<ul>
+<li>Grants access to a proven identity</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Accountability</h2>
+
+<ul>
+<li>Logging of activity</li>
+<li>Audit trail</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>Authentication factor types</h1>
 
 <ol>
-<li>Maybe some lists</li>
-<li>Another secure management identity authenticator module</li>
+<li>Something you know</li>
+<li>Something you have</li>
+<li>Something you are/do</li>
 </ol>
 
+<ul>
+<li>Somewhere you are</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>Type 1 factors</h1>
+
+<h2>Passwords</h2>
+
+<ul>
+<li>Static</li>
+<li>Randomly generated?</li>
+<li>Shared between sites?</li>
+<li>Should be stored as hash</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Password policies</h2>
+
+<ul>
+<li>Maximum age</li>
+<li>History
+
+<ul>
+<li>Minimum age</li>
+</ul></li>
+<li>Complexity</li>
+<li>Length</li>
+<li>Password phrases/passphrases
+
+<ul>
+<li><code class='inline prettyprint'>IP@55edTheC11S$PEx4m</code></li>
+</ul></li>
+<li>Cognitive password</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>Type 2 factors</h1>
+
+<ul>
+<li>Smartcards</li>
+<li>Hardware tokens
+
+<ul>
+<li>Synchronous</li>
+<li>Asynchronous</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>Type 3 factors</h1>
+
+<h2>Biometrics</h2>
+
+<ul>
+<li>As identifying</li>
+<li>As authenticating</li>
+<li><p>As both</p></li>
+<li><p>Physiological</p></li>
+<li><p>Behavioural</p></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>Biometric Factor Error Ratings</h2>
+
+<ol>
+<li>FRR: False Rejection Rate</li>
+<li>FAR: False Acceptance Rate</li>
+<li>CER: Crossover Error Rate/ERR: Equal Error Rate</li>
+</ol>
+</div>
+      <div class='step' >
+    
+<h2>Biometric registration</h2>
+
+<ul>
+<li>Enrollment/registration
+
+<ul>
+<li>Reference profile</li>
+</ul></li>
+<li>Throughput rate</li>
+<li>Acceptance</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>Multifactor Authentication</h1>
+
+<ul>
+<li>Using two or more factors</li>
+<li>Must use different factors for benefit</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>Device Authentication</h1>
+
+<ul>
+<li>Allow BYOD devices, but not on the domain</li>
+<li>Device fingerprinting
+
+<ul>
+<li>IdP - SecureAuth Identity Provider for device authentication</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    </div>
+      <div class='step' >
+    
+<h1>Identity management techniques generally fall into one of two categories: centralized and decentralized/distributed. Centralized access</h1>
+</div>
+      <div class='step' >
+    
+<h1>The following sections discuss several common SSO mechanisms.</h1>
+</div>
+      <div class='step' >
+    
+<h1>A Public Key Infrastructure (PKI) uses LDAP when integrating digital certificates into transmissions.</h1>
+</div>
+      <div class='step' >
+    
+<h1>Kerberos 5, relies on symmetric-key cryptography (also known as secret-key cryptography) using the Advanced Encryption Standard (AES) symmetric encryption protocol.</h1>
+</div>
+      <div class='step' >
+    
+<h1>Security Assertion Markup Language   Security Assertion Markup Language (SAML) is an XML-based language that is commonly used to exchange authentication and authorization (AA) information between federated organizations.</h1>
+</div>
+      <div class='step' >
+    
+<h1>When using any type of authentication system, it’s important to manage sessions to prevent unauthorized access.</h1>
+</div>
+      <div class='step' >
+    
+<h1>Several protocols provide authentication, authorization, and accounting and are referred to as AAA protocols.</h1>
+</div>
+      <div class='step' >
+    
+<h1>Some common AAA protocols are RADIUS, TACACS+, and Diameter.</h1>
+</div>
+      <div class='step' >
+    
+<h1>three main responsibilities of the identity and access provisioning life cycle: provisioning, account review, and account revocation.</h1>
+</div>
+      <div class='step' >
+    
+<h1>Creating new user accounts is usually a simple process, but the process must be protected and secured via organizational security policy procedures.</h1>
+</div>
+      <div class='step' >
+    
+<h1>Accounts should be reviewed periodically to ensure that security policies are being enforced. This includes ensuring that inactive accounts are disabled and employees do not have excessive privileges.</h1>
+</div>
+      <div class='step' >
+    
+<h1>It’s important to guard against two problems related to access control: excessive privilege and creeping privileges.</h1>
+</div>
+      <div class='step' >
+    
+<h1>When employees leave an organization for any reason, it is important to disable their user accounts as soon as possible. This includes when an employee takes a leave of absence.</h1>
+</div>
+      <div class='step' >
+    
+<h1>Accounts are often deleted within 30 days after an account is disabled,</h1>
+</div>
+      <div class='step' >
+    
       </div>
     <script src="js/impress.js"></script>
     <script>impress().init();</script>
