@@ -36,7 +36,7 @@
 </div>
       <div class='step' >
     
-<h1>Assets</h1>
+<h2>Assets</h2>
 
 <ul>
 <li>information</li>
@@ -58,7 +58,7 @@
 </div>
       <div class='step' >
     
-<h1>Access control</h1>
+<h2>Access control</h2>
 
 <p><a href="#%20Access%20is%20the%20transfer%20of%20information%20from%20an%20object%20to%20a%20subject,%20which%20makes%20it%20important%20to%20understand%20the%20definition%20of%20both%20subject%20and%20object."></a></p>
 
@@ -215,7 +215,7 @@
 </div>
       <div class='step' >
     
-<h1>Type 1 factors</h1>
+<h2>Type 1 factors</h2>
 
 <p><a href="#%20Hardware%20tokens%20use%20dynamic%20one-time%20passwords,%20making%20them%20more%20secure%20than%20static%20passwords.%20The%20two%20types%20of%20tokens%20are%20synchronous%20dynamic%20password%20tokens%20and%20asynchronous%20dynamic%20password%20tokens."></a></p>
 
@@ -253,7 +253,7 @@
 </div>
       <div class='step' >
     
-<h1>Type 2 factors</h1>
+<h2>Type 2 factors</h2>
 
 <ul>
 <li>Smartcards</li>
@@ -275,7 +275,7 @@
 </div>
       <div class='step' >
     
-<h1>Type 3 factors</h1>
+<h2>Type 3 factors - Biometrics</h2>
 
 <p><a href="#%20Biometric%20characteristics%20are%20often%20defined%20as%20either%20physiological%20or%20behavioral."></a>
 <a href="#%20the%20least%20acceptable%20biometric%20scanning%20method%20because%20retina%20scans%20can%20reveal%20medical%20conditions,%20such%20as%20high%20blood%20pressure%20and%20pregnancy."></a></p>
@@ -285,8 +285,6 @@
 <a href="#%20The%20ratio%20of%20Type%202%20errors%20to%20valid%20authentications%20is%20called%20the%20false%20acceptance%20rate%20FAR."></a>
 <a href="#%20You%20can%20compare%20the%20overall%20quality%20of%20biometric%20devices%20with%20the%20crossover%20error%20rate%20CER,%20also%20known%20as%20the%20equal%20error%20rate%20ERR."></a>
 <a href="#%20It%E2%80%99s%20not%20necessary,%20and%20often%20not%20desirable,%20to%20operate%20a%20device%20with%20the%20sensitivity%20set%20at%20the%20CER%20level."></a></p>
-
-<h2>Biometrics</h2>
 
 <ul>
 <li>As identifying</li>
@@ -335,7 +333,7 @@
 </div>
       <div class='step' >
     
-<h1>Multifactor Authentication</h1>
+<h2>Multifactor Authentication</h2>
 
 <p><a href="#%20Multifactor%20authentication%20must%20use%20multiple%20types%20or%20factors,%20such%20as%20the%20something-you-know%20factor%20and%20the%20something-you-have%20factor.%20In%20contrast,%20requiring%20users%20to%20enter%20a%20password%20and%20a%20PIN%20is%20not%20multifactor%20authentication%20because%20both%20methods%20are%20from%20a%20single%20authentication%20factor%20-%20something%20you%20know."></a></p>
 
@@ -348,7 +346,7 @@
 </div>
       <div class='step' >
     
-<h1>Device Authentication</h1>
+<h2>Device Authentication</h2>
 
 <p><a href="#%20These%20devices%20aren%E2%80%99t%20necessarily%20able%20to%20join%20a%20domain,%20but%20it%20is%20possible%20to%20implement%20device%20identification%20and%20authentication%20methods%20for%20these%20devices."></a>
 <a href="#%20Organizations%20typically%20use%20third-party%20tools,%20such%20as%20the%20SecureAuth%20Identity%20Provider%20-%20IdP%20-%20for%20device%20authentication."></a></p>
@@ -366,7 +364,7 @@
 </div>
       <div class='step' >
     
-<h1>Identity Management</h1>
+<h2>Identity Management</h2>
 
 <p><a href="#%20Identity%20management%20techniques%20generally%20fall%20into%20one%20of%20two%20categories:%20centralized%20and%20decentralized/distributed.%20Centralized%20access"></a></p>
 
@@ -381,7 +379,7 @@
 </div>
       <div class='step' >
     
-<h1>Single Sign On (SSO)</h1>
+<h2>Single Sign On (SSO)</h2>
 
 <ul>
 <li>Centralized</li>
@@ -410,53 +408,126 @@
 <p><a href="#%20Kerberos%205,%20relies%20on%20symmetric-key%20cryptography%20-%20also%20known%20as%20secret-key%20cryptography%20-%20using%20the%20Advanced%20Encryption%20Standard%20-%20AES%20-%20symmetric%20encryption%20protocol."></a></p>
 
 <ul>
-<li>Kerberos</li>
+<li>Kerberos
+
+<ul>
+<li>Key Distribution Center</li>
+<li>Kerberos Authentication Server</li>
+<li>Ticket granting ticket</li>
+<li>Ticket/Service ticket</li>
+</ul></li>
+<li>SESAME, KryptoKnight, NetSP</li>
+<li>OAuth, OpenID</li>
 </ul>
 
 <p><a href="SSO%20Mechanism%20that%20uses%20a%20third-party%20entity%20to%20provide%20authentication"></a>
-<a href="KRB%20is%20most%20common%20and%20well%20known"></a></p>
+<a href="KRB%20is%20most%20common%20and%20well%20known"></a>
+<a href="uses%20AES%20for%20encrypting%20its%20traffic"></a>
+<a href="KDC:%20all%20clients%20and%20servers%20are%20registered%20here,%20maintains%20secret%20keys%20for%20all%20members"></a>
+<a href="Auth%20server:%20hosts%20TGS%20-%20ticket-granting%20service"></a>
+<a href="TGT:%20proof%20of%20authentication%20with%20KDC;%20having%20this%20shows%20authorization%20to%20request%20tickets.%20Encrypted,%20includes%20a%20symmetric%20key,%20exp%20time,%20user&#x27;s%20IP"></a>
+<a href="Ticket:%20encrypted%20message%20used%20as%20authorization%20proof%20for%20an%20object"></a>
+<a href="Ensures%20against%20credentials,%20session%20keys,%20auth%20messages%20transmitting%20over%20clear%20text"></a>
+<a href="KDC%20is%20a%20single%20point%20of%20failure"></a>
+<a href="Time%20sync%20is%20required"></a></p>
+
+<p><a href="SESAME,%20KryptoKnight:%20ticket%20authentication,%20no%20longer%20widely%20used"></a></p>
+
+<p><a href="OAuth,%20OpenID:%20SSO%20used%20on%20the%20internet%20between%20many%20services/organizations"></a></p>
 </div>
       <div class='step' >
     
-<h1>Security Assertion Markup Language   Security Assertion Markup Language (SAML) is an XML-based language that is commonly used to exchange authentication and authorization (AA) information between federated organizations.</h1>
+<h2>Federated Identity Management</h2>
 
-<h2><a href=""></a></h2>
+<p><a href="#%20Security%20Assertion%20Markup%20Language%C2%A0%C2%A0%C2%A0Security%20Assertion%20Markup%20Language%20SAML%20is%20an%20XML-based%20language%20that%20is%20commonly%20used%20to%20exchange%20authentication%20and%20authorization%20information%20between%20federated%20organizations."></a></p>
 
-<h1>When using any type of authentication system, it’s important to manage sessions to prevent unauthorized access.</h1>
+<ul>
+<li>SAML: Security Assertion Markup Language</li>
+<li>XACML: Extensible Access Control Markup Language</li>
+</ul>
 
-<h2><a href=""></a></h2>
+<p><a href="Used%20when%20multiple%20organizations%20want%20to%20join%20in%20a%20federation%20and%20share%20their%20credentials"></a>
+<a href="SAML%20used%20for%20exchanging%20AA%20information"></a>
+<a href="XACML:%20define%20access%20control%20policies%20in%20XML%20format"></a>
+<a href="Other%20MLs:%20HTML,%20XML,%20YAML"></a></p>
+</div>
+      <div class='step' >
+    
+<h2>Credential Storage Systems</h2>
 
-<h1>Several protocols provide authentication, authorization, and accounting and are referred to as AAA protocols.</h1>
+<ul>
+<li>KeePass</li>
+<li>Windows Credential Manager</li>
+</ul>
 
-<h2><a href=""></a></h2>
+<p><a href="Tools%20that%20store%20authentication%20information%20locally%20in%20an%20encrypted%20format"></a></p>
+</div>
+      <div class='step' >
+    
+<h2>Session management</h2>
 
-<h1>Some common AAA protocols are RADIUS, TACACS+, and Diameter.</h1>
+<p><a href="#%20When%20using%20any%20type%20of%20authentication%20system,%20it%E2%80%99s%20important%20to%20manage%20sessions%20to%20prevent%20unauthorized%20access."></a></p>
 
-<h2><a href=""></a></h2>
+<ul>
+<li>Screen savers</li>
+<li>Online session timeouts</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>AAA Protocols</h2>
 
-<h1>three main responsibilities of the identity and access provisioning life cycle: provisioning, account review, and account revocation.</h1>
+<p><a href="#%20Several%20protocols%20provide%20authentication,%20authorization,%20and%20accounting%20and%20are%20referred%20to%20as%20AAA%20protocols."></a>
+<a href="#%20Some%20common%20AAA%20protocols%20are%20RADIUS,%20TACACS+,%20and%20Diameter."></a></p>
 
-<h2><a href=""></a></h2>
+<ul>
+<li>RADIUS</li>
+<li>TACACS+</li>
+<li>Diameter</li>
+</ul>
 
-<h1>Creating new user accounts is usually a simple process, but the process must be protected and secured via organizational security policy procedures.</h1>
+<p><a href="AAA:%20Authentication,%20Authorization,%20Accounting"></a>
+<a href="RADIUS:%20Remote%20authentication%20dial-in%20user%20service.%20Password%20encrypted,%20not%20other%20data"></a>
+<a href="Terminal%20Access%20Controller%20Acces-control%20System:%20unlike%20radius,%20separates%20auth,%20auth%20and%20accounting%20into%20separate%20processes,%20potentially%20on%20separate%20servers.%20All%20is%20encrypted"></a></p>
+</div>
+      <div class='step' >
+    
+<h2>Identity and Access Provisioning Life Cycle</h2>
 
-<h2><a href=""></a></h2>
+<p><a href="#%20three%20main%20responsibilities%20of%20the%20identity%20and%20access%20provisioning%20life%20cycle:%20provisioning,%20account%20review,%20and%20account%20revocation."></a>
+<a href="#%20Creating%20new%20user%20accounts%20is%20usually%20a%20simple%20process,%20but%20the%20process%20must%20be%20protected%20and%20secured%20via%20organizational%20security%20policy%20procedures.%60"></a>
+<a href="#%20Accounts%20should%20be%20reviewed%20periodically%20to%20ensure%20that%20security%20policies%20are%20being%20enforced.%20This%20includes%20ensuring%20that%20inactive%20accounts%20are%20disabled%20and%20employees%20do%20not%20have%20excessive%20privileges."></a>
+<a href="#%20When%20employees%20leave%20an%20organization%20for%20any%20reason,%20it%20is%20important%20to%20disable%20their%20user%20accounts%20as%20soon%20as%20possible.%20This%20includes%20when%20an%20employee%20takes%20a%20leave%20of%20absence."></a>
+<a href="#%20Accounts%20are%20often%20deleted%20within%2030%20days%20after%20an%20account%20is%20disabled"></a></p>
 
-<h1>Accounts should be reviewed periodically to ensure that security policies are being enforced. This includes ensuring that inactive accounts are disabled and employees do not have excessive privileges.</h1>
+<ul>
+<li>Provisioning</li>
+<li>Review</li>
+<li>Revocation</li>
+</ul>
 
-<h2><a href=""></a></h2>
+<p><a href="Provisioning:%20creation%20of%20account"></a>
+<a href="-%20proper%20identity%20checks,%20hr,%20etc"></a>
+<a href="Account%20review:%20periodic%20mangement,%20privilege%20checks"></a>
+<a href="Revocation:%20deletion.%20Employee%20leave%20-%3E%20disable%20-%3E%2030%20days%20-%3E%20deletion"></a></p>
+</div>
+      <div class='step' >
+    
+<h2>Access control issues</h2>
 
-<h1>It’s important to guard against two problems related to access control: excessive privilege and creeping privileges.</h1>
+<p><a href="#%20It%E2%80%99s%20important%20to%20guard%20against%20two%20problems%20related%20to%20access%20control:%20excessive%20privilege%20and%20creeping%20privileges."></a></p>
 
-<h2><a href=""></a></h2>
+<ul>
+<li>Excessive privilege</li>
+<li>Creeping privileges</li>
+</ul>
 
-<h1>When employees leave an organization for any reason, it is important to disable their user accounts as soon as possible. This includes when an employee takes a leave of absence.</h1>
-
-<h2><a href=""></a></h2>
-
-<h1>Accounts are often deleted within 30 days after an account is disabled,</h1>
-
-<h2><a href=""></a></h2>
+<p><a href="Excessive:%20more%20privileges%20than%20the%20assigned%20work%20dictates"></a>
+<a href="Creeping:%20account%20accumulated%20privileges%20over%20time%20as%20job%20roles%20changed/added"></a></p>
+</div>
+      <div class='step' >
+    
+<h2>Questions</h2>
 
       </div>
     <script src="js/impress.js"></script>

@@ -8,7 +8,7 @@ title: Chapter 13 Managing Identity and Authentication
 [](This is how we do comments, later to be reformatted as presentation notes)
 
 ---
-# Assets
+## Assets
 
 - information
 - systems
@@ -27,7 +27,7 @@ title: Chapter 13 Managing Identity and Authentication
 [](Personnel: people working for org)
 
 ---
-# Access control
+## Access control
 [](# Access is the transfer of information from an object to a subject, which makes it important to understand the definition of both subject and object.)
 
 ## Subjects vs Objects
@@ -149,7 +149,7 @@ title: Chapter 13 Managing Identity and Authentication
 [](4. sometimes used as well: phone number, ip addres, geolocation)
 
 ---
-# Type 1 factors
+## Type 1 factors
 [](# Hardware tokens use dynamic one-time passwords, making them more secure than static passwords. The two types of tokens are synchronous dynamic password tokens and asynchronous dynamic password tokens.)
 
 [](- Static)
@@ -183,7 +183,7 @@ title: Chapter 13 Managing Identity and Authentication
 [](Cognitive passwords: Q&A: birthdate, mother's maiden name, etc)
 
 ---
-# Type 2 factors
+## Type 2 factors
 
 - Smartcards
 - Hardware tokens
@@ -199,7 +199,7 @@ title: Chapter 13 Managing Identity and Authentication
 []( Asynchronous - based on an algorithm and counter, may require a PIN)
 
 ---
-# Type 3 factors
+## Type 3 factors - Biometrics
 [](# Biometric characteristics are often defined as either physiological or behavioral.)
 [](# the least acceptable biometric scanning method because retina scans can reveal medical conditions, such as high blood pressure and pregnancy.)
 
@@ -209,14 +209,14 @@ title: Chapter 13 Managing Identity and Authentication
 [](# You can compare the overall quality of biometric devices with the crossover error rate CER, also known as the equal error rate ERR.)
 [](# It’s not necessary, and often not desirable, to operate a device with the sensitivity set at the CER level.)
 
-## Biometrics
-
 - As identifying
 - As authenticating
 - As both
 
+
 - Physiological
 - Behavioural
+
 
 - Error Ratings
 
@@ -250,7 +250,7 @@ title: Chapter 13 Managing Identity and Authentication
 [](Acceptance: whether users accept the inconvenience of the method)
 
 ---
-# Multifactor Authentication
+## Multifactor Authentication
 [](# Multifactor authentication must use multiple types or factors, such as the something-you-know factor and the something-you-have factor. In contrast, requiring users to enter a password and a PIN is not multifactor authentication because both methods are from a single authentication factor - something you know.)
 
 - Using two or more factors
@@ -259,7 +259,7 @@ title: Chapter 13 Managing Identity and Authentication
 [](If using same factors, strength is no greater)
 
 ---
-# Device Authentication
+## Device Authentication
 [](# These devices aren’t necessarily able to join a domain, but it is possible to implement device identification and authentication methods for these devices.)
 [](# Organizations typically use third-party tools, such as the SecureAuth Identity Provider - IdP - for device authentication.)
 
@@ -270,7 +270,7 @@ title: Chapter 13 Managing Identity and Authentication
 [](Device fingerprinting: associate with user accounts, capture characteristics: operating system, version, web browser, etc)
 
 ---
-# Identity Management
+## Identity Management
 [](# Identity management techniques generally fall into one of two categories: centralized and decentralized/distributed. Centralized access)
 
 - Centralized
@@ -281,7 +281,7 @@ title: Chapter 13 Managing Identity and Authentication
 [](Book basically says Centralized is better due to less administrative overhead in managing systems)
 
 ---
-# Single Sign On (SSO)
+## Single Sign On (SSO)
 
 - Centralized
 - Increases security
@@ -304,47 +304,99 @@ title: Chapter 13 Managing Identity and Authentication
 [](# Kerberos 5, relies on symmetric-key cryptography - also known as secret-key cryptography - using the Advanced Encryption Standard - AES - symmetric encryption protocol.)
 
 - Kerberos
+    - Key Distribution Center
+    - Kerberos Authentication Server
+    - Ticket granting ticket
+    - Ticket/Service ticket
+- SESAME, KryptoKnight, NetSP
+- OAuth, OpenID
 
 [](SSO Mechanism that uses a third-party entity to provide authentication)
 [](KRB is most common and well known)
+[](uses AES for encrypting its traffic)
+[](KDC: all clients and servers are registered here, maintains secret keys for all members)
+[](Auth server: hosts TGS - ticket-granting service)
+[](TGT: proof of authentication with KDC; having this shows authorization to request tickets. Encrypted, includes a symmetric key, exp time, user's IP)
+[](Ticket: encrypted message used as authorization proof for an object)
+[](Ensures against credentials, session keys, auth messages transmitting over clear text)
+[](KDC is a single point of failure)
+[](Time sync is required)
+
+[](SESAME, KryptoKnight: ticket authentication, no longer widely used)
+
+[](OAuth, OpenID: SSO used on the internet between many services/organizations)
 
 ---
-# Security Assertion Markup Language   Security Assertion Markup Language (SAML) is an XML-based language that is commonly used to exchange authentication and authorization (AA) information between federated organizations.
+## Federated Identity Management
 
-[]( )
----
-# When using any type of authentication system, it’s important to manage sessions to prevent unauthorized access.
+[](# Security Assertion Markup Language   Security Assertion Markup Language SAML is an XML-based language that is commonly used to exchange authentication and authorization information between federated organizations.)
 
-[]( )
----
-# Several protocols provide authentication, authorization, and accounting and are referred to as AAA protocols.
+- SAML: Security Assertion Markup Language
+- XACML: Extensible Access Control Markup Language
 
-[]( )
----
-# Some common AAA protocols are RADIUS, TACACS+, and Diameter.
+[](Used when multiple organizations want to join in a federation and share their credentials)
+[](SAML used for exchanging AA information)
+[](XACML: define access control policies in XML format)
+[](Other MLs: HTML, XML, YAML)
 
-[]( )
 ---
-# three main responsibilities of the identity and access provisioning life cycle: provisioning, account review, and account revocation.
+## Credential Storage Systems
 
-[]( )
----
-# Creating new user accounts is usually a simple process, but the process must be protected and secured via organizational security policy procedures.
+- KeePass
+- Windows Credential Manager
 
-[]( )
----
-# Accounts should be reviewed periodically to ensure that security policies are being enforced. This includes ensuring that inactive accounts are disabled and employees do not have excessive privileges.
+[](Tools that store authentication information locally in an encrypted format)
 
-[]( )
 ---
-# It’s important to guard against two problems related to access control: excessive privilege and creeping privileges.
+## Session management
 
-[]( )
----
-# When employees leave an organization for any reason, it is important to disable their user accounts as soon as possible. This includes when an employee takes a leave of absence.
+[](# When using any type of authentication system, it’s important to manage sessions to prevent unauthorized access.)
 
-[]( )
+- Screen savers
+- Online session timeouts
+
 ---
-# Accounts are often deleted within 30 days after an account is disabled,
-[]( )
+## AAA Protocols
+
+[](# Several protocols provide authentication, authorization, and accounting and are referred to as AAA protocols.)
+[](# Some common AAA protocols are RADIUS, TACACS+, and Diameter.)
+
+- RADIUS
+- TACACS+
+- Diameter
+
+[](AAA: Authentication, Authorization, Accounting)
+[](RADIUS: Remote authentication dial-in user service. Password encrypted, not other data)
+[](Terminal Access Controller Acces-control System: unlike radius, separates auth, auth and accounting into separate processes, potentially on separate servers. All is encrypted)
+
 ---
+## Identity and Access Provisioning Life Cycle
+
+[](# three main responsibilities of the identity and access provisioning life cycle: provisioning, account review, and account revocation.)
+[](# Creating new user accounts is usually a simple process, but the process must be protected and secured via organizational security policy procedures.`)
+[](# Accounts should be reviewed periodically to ensure that security policies are being enforced. This includes ensuring that inactive accounts are disabled and employees do not have excessive privileges.)
+[](# When employees leave an organization for any reason, it is important to disable their user accounts as soon as possible. This includes when an employee takes a leave of absence.)
+[](# Accounts are often deleted within 30 days after an account is disabled)
+
+- Provisioning
+- Review
+- Revocation
+
+[](Provisioning: creation of account)
+[]( - proper identity checks, hr, etc)
+[](Account review: periodic mangement, privilege checks)
+[](Revocation: deletion. Employee leave -> disable -> 30 days -> deletion)
+
+---
+## Access control issues
+
+[](# It’s important to guard against two problems related to access control: excessive privilege and creeping privileges.)
+
+- Excessive privilege
+- Creeping privileges
+
+[](Excessive: more privileges than the assigned work dictates)
+[](Creeping: account accumulated privileges over time as job roles changed/added)
+
+---
+## Questions
