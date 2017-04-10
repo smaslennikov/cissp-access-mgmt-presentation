@@ -15,7 +15,6 @@ title: Chapter 13 Managing Identity and Authentication
 - devices
 - facilities
 - personnel
-[](drawing 1)
 
 [](Chapter about controlling access to assets, e.g. above.)
 
@@ -31,7 +30,6 @@ title: Chapter 13 Managing Identity and Authentication
 [](# Access is the transfer of information from an object to a subject, which makes it important to understand the definition of both subject and object.)
 
 ## Subjects vs Objects
-[](drawing 2)
 
 [](Subject: active entity to access an object)
 [](Object: passive entity that provides information to subject)
@@ -53,7 +51,6 @@ title: Chapter 13 Managing Identity and Authentication
 - Corrective
     - Recovery
 - Compensation
-[](?drawing 3)
 
 [](Prevent unwanted activity from occuring: don't allow and deter/discourage)
 [](Fences, presence of cameras)
@@ -72,7 +69,6 @@ title: Chapter 13 Managing Identity and Authentication
 - Administrative
 - Logical/Technical
 - Physical
-[](?drawing 3)
 
 [](admin: Policies, procedures, background checks)
 [](logical/tech: hardware/software mechanisms: passwords, biometric scanners, IDS/IPS)
@@ -86,7 +82,6 @@ title: Chapter 13 Managing Identity and Authentication
 - Confidentiality
 - Integrity
 - Availability
-[](?drawing 4)
 
 [](CIA Triad:)
 [](Confidentiality: unauthorized access means loss of it)
@@ -99,7 +94,6 @@ title: Chapter 13 Managing Identity and Authentication
 [](# A core principle with authentication is that all subjects must have unique identities.)
 
 - Unique
-[](drawing 3)
 
 ---
 ## Authentication
@@ -107,7 +101,6 @@ title: Chapter 13 Managing Identity and Authentication
 [](# Identification and authentication always occur together as a single two-step process. Providing an identity is the first step, and providing the authentication information is the second step.)
 
 - Verifies identity
-[](drawing 4)
 
 [](Identification & Authentication is a single two-step process)
 [](Systems maintain secrecy of authentication data)
@@ -119,7 +112,6 @@ title: Chapter 13 Managing Identity and Authentication
 [](# Identification and authentication are “all-or-nothing” aspects of access control. Either a user’s credentials prove a professed identity, or they don’t. In contrast, authorization occupies a wide range of variations.)
 
 - Grants access to a proven identity
-[](drawing 5)
 
 ---
 ## Accountability
@@ -127,7 +119,6 @@ title: Chapter 13 Managing Identity and Authentication
 
 - Logging
 - Audit trail
-[](drawing 6)
 
 [](Must log activity to be able to hold identities liable)
 [](Must have identification and authentication but not authorization)
@@ -209,15 +200,8 @@ title: Chapter 13 Managing Identity and Authentication
 [](# You can compare the overall quality of biometric devices with the crossover error rate CER, also known as the equal error rate ERR.)
 [](# It’s not necessary, and often not desirable, to operate a device with the sensitivity set at the CER level.)
 
-- As identifying
-- As authenticating
-- As both
-
-
-- Physiological
-- Behavioural
-
-
+- As identifying/authenticating/both
+- Physiological/behavioural
 - Error Ratings
 
 [](Biometric factors may be used for identification, authentication or both)
