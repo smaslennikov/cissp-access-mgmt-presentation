@@ -2,8 +2,8 @@
 author: Slava & Brandon
 title: Chapter 13 Managing Identity and Authentication
 ---
-# Chapter 13
-## Managing Identity and Authentication
+# Chapters 13 & 14
+## Access Management
 
 [](This is how we do comments, later to be reformatted as presentation notes)
 
