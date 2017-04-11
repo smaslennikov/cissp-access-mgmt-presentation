@@ -394,9 +394,9 @@ title: Chapter 13 Managing Identity and Authentication
 ---
 ## Discretionary Access Controls
 - Who controls and defines access?
-    a. Owner
-    b. Creator
-    c. Data Custodian
+    - Owner
+    - Creator
+    - Data Custodian
 
 [](Ex: Creating a new Excel spreadsheet)
 [](Next slide discusses Non-discretionary Access Controls)
