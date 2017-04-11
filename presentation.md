@@ -383,4 +383,118 @@ title: Chapter 13 Managing Identity and Authentication
 [](Creeping: account accumulated privileges over time as job roles changed/added)
 
 ---
-## Questions
+# Chapter 14 - Controlling and Monitoring Access
+
+
+---
+
+## Authorization Mechanisms
+
+1. Implicit Deny
+2. Constrained Interface
+3. Context-Dependent Control
+4. Least Privilege
+
+
+---
+
+## Defense-in-Depth
+
+Multiple layers of access controls for security
+
+1. Physical Access Controls
+2. Logical/Technical Controls
+3. Administrative Access Controls
+
+[](Ex: Physical Servers in our IDF
+)
+
+---
+
+## Access Control Techniques
+
+A. Discretionary Access Controls
+  - Who controls and defines access?
+
+  1. Owner
+  2. Creator
+  3. Data Custodian
+
+  Ex: Creating a new Excel spreadsheet
+
+[](Next slide discusses Non-discretionary Access Controls)
+
+---
+
+B. Non-discretionary Access Controls
+
+1. Role-based Access Control
+
+2. Rule-based Access Control
+  - Ex: Firewalls
+
+3. Mandatory Access Controls
+
+[](1. RBAC - Discuss roles in our environment and how we use that to assign permissions)
+[](2. Rule-BAC -)
+[](Ex: Firewalls)
+[](3. MAC)
+[](Ex: Users and objects have labels. Military classification of data that allows access based on clearance level)
+
+---
+
+## Risk Elements
+
+- Identify assets => Asset Valuation
+- Identify threats => Threat modeling
+    1. Focused on Assets
+    2. Focused on Attackers
+    3. Focused on Software
+- Identify vulnerabilities => Vulnerability Analysis
+
+[](A. identify actual value of assets with goal of prioritizing them.)
+[](Determines cost-effectiveness of different security controls)
+[](B. Threats modeling. Asset focus uses valuation results to identify threats to those assets.)
+[](Focused on attackers considers attackers' goals to identify threats. ex: political standpoints)
+[](Focused on software considers threats against it's software which presents more threats, especially the more traffic it gets.)
+[](C. Vulnerability analysis identifies strengths and weaknesses of diff access control methods and potential of a threat)
+
+---
+
+## Access Control Attacks
+
+- Password Attacks
+- Spoofing Attacks
+- Social Engineering Attacks
+- Smartcard Attacks
+    - Side-channel attack
+- Denial-of-Service Attacks (DoS)
+
+[](Password:)
+[](Dictionary Attacks)
+[](Brute-Force Attacks)
+[](Rainbow Table Attacks)
+[](Sniffer Attacks)
+
+[](Social eng:)
+[](Phishing)
+[](Spear Phishing)
+[](Whaling)
+
+
+[](A. Mention top 10 passwords used from published account information stolen from a Sony attack)
+[](  1. Dictionary - crack password by using every possible password or character combinations from a database of common passwords)
+[](  2. Brute-force - crack password by trying all possible combinations of letters, numbers, and symbols. Hybrid attacks)
+[](  3. Rainbow table - uses pre-computed hashes to compare every hash in a password database file - would have to steal that.)
+[](  4. Sniffer - software that captures packets sent over network. Encrypt data over the network)
+[]()
+[](B. Email spoofing. Phone number spoofing)
+[]()
+[](C. Social engineering can happen in person, over the phone, or over the internet)
+[](  1. trick into giving up sensitive info)
+[](  2. targets specific users, like employees)
+[](  3. specifically targets senior or high-level execs)
+[]()
+[](D. observes operation of device and can learn info contained on card, like encryption key)
+[]()
+[](E. Sends so much traffic to servers it prevents legitimate traffic or processing of requests)

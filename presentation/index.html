@@ -514,7 +514,136 @@
 </div>
       <div class='step' >
     
-<h2>Questions</h2>
+<h1>Chapter 14 - Controlling and Monitoring Access</h1>
+</div>
+      <div class='step' >
+    
+<h2>Authorization Mechanisms</h2>
+
+<ol>
+<li>Implicit Deny</li>
+<li>Constrained Interface</li>
+<li>Context-Dependent Control</li>
+<li>Least Privilege</li>
+</ol>
+</div>
+      <div class='step' >
+    
+<h2>Defense-in-Depth</h2>
+
+<p>Multiple layers of access controls for security</p>
+
+<ol>
+<li>Physical Access Controls</li>
+<li>Logical/Technical Controls</li>
+<li>Administrative Access Controls</li>
+</ol>
+
+<p><a href="Ex:%20Physical%20Servers%20in%20our%20IDF"></a></p>
+</div>
+      <div class='step' >
+    
+<h2>Access Control Techniques</h2>
+
+<p>A. Discretionary Access Controls
+  - Who controls and defines access?</p>
+
+<ol>
+<li>Owner</li>
+<li>Creator</li>
+<li>Data Custodian</li>
+</ol>
+
+<p>Ex: Creating a new Excel spreadsheet</p>
+
+<p><a href="Next%20slide%20discusses%20Non-discretionary%20Access%20Controls"></a></p>
+</div>
+      <div class='step' >
+    
+<p>B. Non-discretionary Access Controls</p>
+
+<ol>
+<li><p>Role-based Access Control</p></li>
+<li><p>Rule-based Access Control</p>
+
+<ul>
+<li>Ex: Firewalls</li>
+</ul></li>
+<li><p>Mandatory Access Controls</p></li>
+</ol>
+
+<p><a href="1.%20RBAC%20-%20Discuss%20roles%20in%20our%20environment%20and%20how%20we%20use%20that%20to%20assign%20permissions"></a>
+<a href="2.%20Rule-BAC%20-"></a>
+<a href="Ex:%20Firewalls"></a>
+<a href="3.%20MAC"></a>
+<a href="Ex:%20Users%20and%20objects%20have%20labels.%20Military%20classification%20of%20data%20that%20allows%20access%20based%20on%20clearance%20level"></a></p>
+</div>
+      <div class='step' >
+    
+<h2>Risk Elements</h2>
+
+<ul>
+<li>Identify assets =&gt; Asset Valuation</li>
+<li>Identify threats =&gt; Threat modeling
+
+<ol>
+<li>Focused on Assets</li>
+<li>Focused on Attackers</li>
+<li>Focused on Software</li>
+</ol></li>
+<li>Identify vulnerabilities =&gt; Vulnerability Analysis</li>
+</ul>
+
+<p><a href="A.%20identify%20actual%20value%20of%20assets%20with%20goal%20of%20prioritizing%20them."></a>
+<a href="Determines%20cost-effectiveness%20of%20different%20security%20controls"></a>
+<a href="B.%20Threats%20modeling.%20Asset%20focus%20uses%20valuation%20results%20to%20identify%20threats%20to%20those%20assets."></a>
+<a href="Focused%20on%20attackers%20considers%20attackers&#x27;%20goals%20to%20identify%20threats.%20ex:%20political%20standpoints"></a>
+<a href="Focused%20on%20software%20considers%20threats%20against%20it&#x27;s%20software%20which%20presents%20more%20threats,%20especially%20the%20more%20traffic%20it%20gets."></a>
+<a href="C.%20Vulnerability%20analysis%20identifies%20strengths%20and%20weaknesses%20of%20diff%20access%20control%20methods%20and%20potential%20of%20a%20threat"></a></p>
+</div>
+      <div class='step' >
+    
+<h2>Access Control Attacks</h2>
+
+<ul>
+<li>Password Attacks</li>
+<li>Spoofing Attacks</li>
+<li>Social Engineering Attacks</li>
+<li>Smartcard Attacks
+
+<ul>
+<li>Side-channel attack</li>
+</ul></li>
+<li>Denial-of-Service Attacks (DoS)</li>
+</ul>
+
+<p><a href="Password:"></a>
+<a href="Dictionary%20Attacks"></a>
+<a href="Brute-Force%20Attacks"></a>
+<a href="Rainbow%20Table%20Attacks"></a>
+<a href="Sniffer%20Attacks"></a></p>
+
+<p><a href="Social%20eng:"></a>
+<a href="Phishing"></a>
+<a href="Spear%20Phishing"></a>
+<a href="Whaling"></a></p>
+
+<p><a href="A.%20Mention%20top%2010%20passwords%20used%20from%20published%20account%20information%20stolen%20from%20a%20Sony%20attack"></a>
+<a href="1.%20Dictionary%20-%20crack%20password%20by%20using%20every%20possible%20password%20or%20character%20combinations%20from%20a%20database%20of%20common%20passwords"></a>
+<a href="2.%20Brute-force%20-%20crack%20password%20by%20trying%20all%20possible%20combinations%20of%20letters,%20numbers,%20and%20symbols.%20Hybrid%20attacks"></a>
+<a href="3.%20Rainbow%20table%20-%20uses%20pre-computed%20hashes%20to%20compare%20every%20hash%20in%20a%20password%20database%20file%20-%20would%20have%20to%20steal%20that."></a>
+<a href="4.%20Sniffer%20-%20software%20that%20captures%20packets%20sent%20over%20network.%20Encrypt%20data%20over%20the%20network"></a>
+<a href=""></a>
+<a href="B.%20Email%20spoofing.%20Phone%20number%20spoofing"></a>
+<a href=""></a>
+<a href="C.%20Social%20engineering%20can%20happen%20in%20person,%20over%20the%20phone,%20or%20over%20the%20internet"></a>
+<a href="1.%20trick%20into%20giving%20up%20sensitive%20info"></a>
+<a href="2.%20targets%20specific%20users,%20like%20employees"></a>
+<a href="3.%20specifically%20targets%20senior%20or%20high-level%20execs"></a>
+<a href=""></a>
+<a href="D.%20observes%20operation%20of%20device%20and%20can%20learn%20info%20contained%20on%20card,%20like%20encryption%20key"></a>
+<a href=""></a>
+<a href="E.%20Sends%20so%20much%20traffic%20to%20servers%20it%20prevents%20legitimate%20traffic%20or%20processing%20of%20requests"></a></p>
 
       </div>
     <script src="js/impress.js"></script>
