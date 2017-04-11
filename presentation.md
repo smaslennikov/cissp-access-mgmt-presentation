@@ -73,6 +73,7 @@ title: Chapter 13 Managing Identity and Authentication
 [](admin: Policies, procedures, background checks)
 [](logical/tech: hardware/software mechanisms: passwords, biometric scanners, IDS/IPS)
 [](physical: ones you can touch: guards, fences, swipe cards, alarms)
+
 [](Ex: Physical Servers in our IDF)
 
 ---
@@ -316,12 +317,16 @@ title: Chapter 13 Managing Identity and Authentication
 
 [](# Security Assertion Markup Language   Security Assertion Markup Language SAML is an XML-based language that is commonly used to exchange authentication and authorization information between federated organizations.)
 
-- SAML: Security Assertion Markup Language
-- XACML: Extensible Access Control Markup Language
+- SAML
+- XACML
+
+[](SAML: Security Assertion Markup Language)
+[](SAML used for exchanging AA information)
+
+[](XACML: Extensible Access Control Markup Language)
+[](XACML: define access control policies in XML format)
 
 [](Used when multiple organizations want to join in a federation and share their credentials)
-[](SAML used for exchanging AA information)
-[](XACML: define access control policies in XML format)
 [](Other MLs: HTML, XML, YAML)
 
 ---
@@ -409,9 +414,9 @@ title: Chapter 13 Managing Identity and Authentication
 - Mandatory Access Controls
 
 [](1. RBAC - Discuss roles in our environment and how we use that to assign permissions)
-[](2. Rule-BAC -)
-[](Ex: Firewalls)
+[](2. Rule-BAC Ex: Firewalls)
 [](3. MAC)
+
 [](Ex: Users and objects have labels. Military classification of data that allows access based on clearance level)
 
 ---
@@ -458,14 +463,14 @@ title: Chapter 13 Managing Identity and Authentication
 [](  2. Brute-force - crack password by trying all possible combinations of letters, numbers, and symbols. Hybrid attacks)
 [](  3. Rainbow table - uses pre-computed hashes to compare every hash in a password database file - would have to steal that.)
 [](  4. Sniffer - software that captures packets sent over network. Encrypt data over the network)
-[]()
+
 [](B. Email spoofing. Phone number spoofing)
-[]()
+
 [](C. Social engineering can happen in person, over the phone, or over the internet)
 [](  1. trick into giving up sensitive info)
 [](  2. targets specific users, like employees)
 [](  3. specifically targets senior or high-level execs)
-[]()
+
 [](D. observes operation of device and can learn info contained on card, like encryption key)
-[]()
+
 [](E. Sends so much traffic to servers it prevents legitimate traffic or processing of requests)
