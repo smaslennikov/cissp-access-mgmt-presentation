@@ -73,6 +73,7 @@ title: Chapter 13 Managing Identity and Authentication
 [](admin: Policies, procedures, background checks)
 [](logical/tech: hardware/software mechanisms: passwords, biometric scanners, IDS/IPS)
 [](physical: ones you can touch: guards, fences, swipe cards, alarms)
+[](Ex: Physical Servers in our IDF)
 
 ---
 ## IT Loss Types
@@ -383,11 +384,6 @@ title: Chapter 13 Managing Identity and Authentication
 [](Creeping: account accumulated privileges over time as job roles changed/added)
 
 ---
-# Chapter 14 - Controlling and Monitoring Access
-
-
----
-
 ## Authorization Mechanisms
 
 1. Implicit Deny
@@ -395,45 +391,22 @@ title: Chapter 13 Managing Identity and Authentication
 3. Context-Dependent Control
 4. Least Privilege
 
-
 ---
+## Discretionary Access Controls
+- Who controls and defines access?
+    a. Owner
+    b. Creator
+    c. Data Custodian
 
-## Defense-in-Depth
-
-Multiple layers of access controls for security
-
-1. Physical Access Controls
-2. Logical/Technical Controls
-3. Administrative Access Controls
-
-[](Ex: Physical Servers in our IDF
-)
-
----
-
-## Access Control Techniques
-
-A. Discretionary Access Controls
-  - Who controls and defines access?
-
-  1. Owner
-  2. Creator
-  3. Data Custodian
-
-  Ex: Creating a new Excel spreadsheet
-
+[](Ex: Creating a new Excel spreadsheet)
 [](Next slide discusses Non-discretionary Access Controls)
 
 ---
+## Non-discretionary Access Controls
 
-B. Non-discretionary Access Controls
-
-1. Role-based Access Control
-
-2. Rule-based Access Control
-  - Ex: Firewalls
-
-3. Mandatory Access Controls
+- Role-based Access Control
+- Rule-based Access Control
+- Mandatory Access Controls
 
 [](1. RBAC - Discuss roles in our environment and how we use that to assign permissions)
 [](2. Rule-BAC -)
@@ -442,7 +415,6 @@ B. Non-discretionary Access Controls
 [](Ex: Users and objects have labels. Military classification of data that allows access based on clearance level)
 
 ---
-
 ## Risk Elements
 
 - Identify assets => Asset Valuation
@@ -460,7 +432,6 @@ B. Non-discretionary Access Controls
 [](C. Vulnerability analysis identifies strengths and weaknesses of diff access control methods and potential of a threat)
 
 ---
-
 ## Access Control Attacks
 
 - Password Attacks
