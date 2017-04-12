@@ -1,6 +1,6 @@
 ---
 author: Slava & Brandon
-title: Chapter 13 Managing Identity and Authentication
+title: Chapters 13 & 14 Managing Identity, Authentication and Authorization
 ---
 # Chapters 13 & 14
 ## Access Management
@@ -346,7 +346,7 @@ title: Chapter 13 Managing Identity and Authentication
 - TACACS+
 - Diameter
 
-[](AAA: Authentication, Authorization, Accounting)
+[](AAA: Authentication, Authorization, Accountability)
 [](RADIUS: Remote authentication dial-in user service. Password encrypted, not other data)
 [](Terminal Access Controller Acces-control System: unlike radius, separates auth, auth and accounting into separate processes, potentially on separate servers. All is encrypted)
 
