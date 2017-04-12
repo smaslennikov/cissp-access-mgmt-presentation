@@ -382,17 +382,17 @@ title: Chapters 13 & 14 Managing Identity, Authentication and Authorization
 ---
 ## Authorization Mechanisms
 
-1. Implicit Deny
-2. Constrained Interface
-3. Context-Dependent Control
-4. Least Privilege
+- Implicit Deny
+- Access Control Matrix
+- Compatibility Tables
+- Constrained Interface
+- Context-Dependent Control
+- Least Privilege
+- Separation of Duties/Responsibilities
 
 ---
 ## Discretionary Access Controls
-- Who controls and defines access?
-    - Owner
-    - Creator
-    - Data Custodian
+- Defined by data custodian
 
 [](Ex: Creating a new Excel spreadsheet)
 [](Next slide discusses Non-discretionary Access Controls)
@@ -413,12 +413,12 @@ title: Chapters 13 & 14 Managing Identity, Authentication and Authorization
 ---
 ## Risk Elements
 
-- Identify assets => Asset Valuation
-- Identify threats => Threat modeling
-    1. Focused on Assets
-    2. Focused on Attackers
-    3. Focused on Software
-- Identify vulnerabilities => Vulnerability Analysis
+- Identify assets
+    - Asset Valuation
+- Identify threats
+    - Threat modeling
+- Identify vulnerabilities
+    - Vulnerability Analysis
 
 [](A. identify actual value of assets with goal of prioritizing them.)
 [](Determines cost-effectiveness of different security controls)
